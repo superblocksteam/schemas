@@ -32,6 +32,9 @@
         "environment": {
           "type": "string"
         },
+        "organizationId": {
+          "type": "string"
+        },
         "messageType": {
           "$ref": "#/definitions/AgentMessageType"
         },
