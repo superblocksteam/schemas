@@ -4,7 +4,6 @@ export type CreateApplication = {
   // @format uuid
   organizationId: string;
   color: string;
-  icon: string;
   isPublic?: boolean;
   // @format uuid
   folderId?: string;

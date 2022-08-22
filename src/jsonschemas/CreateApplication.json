@@ -21,9 +21,6 @@
         "color": {
           "type": "string"
         },
-        "icon": {
-          "type": "string"
-        },
         "isPublic": {
           "type": "boolean"
         },
@@ -34,8 +31,7 @@
       "required": [
         "name",
         "organizationId",
-        "color",
-        "icon"
+        "color"
       ],
       "additionalProperties": false
     }

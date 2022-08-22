@@ -103,6 +103,9 @@
         },
         "error": {
           "type": "string"
+        },
+        "timing": {
+          "$ref": "#/definitions/ApiResourceTiming"
         }
       },
       "required": [
@@ -132,6 +135,84 @@
         0,
         1
       ]
+    },
+    "ApiResourceTiming": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fetchStart": {
+          "type": "number"
+        },
+        "fetchEnd": {
+          "type": "number"
+        },
+        "fetchDurationMs": {
+          "type": "number"
+        },
+        "executeStart": {
+          "type": "number"
+        },
+        "executeEnd": {
+          "type": "number"
+        },
+        "executeDurationMs": {
+          "type": "number"
+        },
+        "fetchAndExecuteStart": {
+          "type": "number"
+        },
+        "fetchAndExecuteEnd": {
+          "type": "number"
+        },
+        "fetchAndExecuteDurationMs": {
+          "type": "number"
+        },
+        "steps": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "resolveDatasourceBindingsStart": {
+                "type": "number"
+              },
+              "resolveDatasourceBindingsEnd": {
+                "type": "number"
+              },
+              "resolveDatasourceBindingsDurationMs": {
+                "type": "number"
+              },
+              "resolveActionBindingsStart": {
+                "type": "number"
+              },
+              "resolveActionBindingsEnd": {
+                "type": "number"
+              },
+              "resolveActionBindingsDurationMs": {
+                "type": "number"
+              },
+              "executeStart": {
+                "type": "number"
+              },
+              "executeEnd": {
+                "type": "number"
+              },
+              "executeDurationMs": {
+                "type": "number"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "requestStart": {
+          "type": "number"
+        },
+        "requestEnd": {
+          "type": "number"
+        },
+        "requestDurationMs": {
+          "type": "number"
+        }
+      }
     },
     "StepDetail": {
       "type": "object",
