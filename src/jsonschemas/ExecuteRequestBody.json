@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$ref": "#/definitions/ExecuteRequestBody",
+  "definitions": {
+    "ExecuteRequestBody": {
+      "type": "object",
+      "properties": {
+        "apiId": {
+          "$ref": "#/definitions/UuidSchema"
+        },
+        "apiName": {
+          "type": "string"
+        },
+        "viewMode": {
+          "type": "boolean"
+        },
+        "params": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string"
+              },
+              "value": {}
+            },
+            "required": [
+              "key"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "relays": {
+          "type": "object",
+          "properties": {
+            "headers": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "body": {
+              "type": "array",
+              "items": {}
+            },
+            "query": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "headers",
+            "body",
+            "query"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "apiId",
+        "apiName",
+        "viewMode",
+        "params",
+        "relays"
+      ],
+      "additionalProperties": false
+    },
+    "UuidSchema": {
+      "type": "string",
+      "format": "uuid"
+    }
+  }
+}
