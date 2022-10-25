@@ -357,7 +357,8 @@
         "Active",
         "Disconnected",
         "Browser Unreachable",
-        "Pending Registration"
+        "Pending Registration",
+        "Stale"
       ]
     }
   }

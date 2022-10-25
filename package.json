@@ -1,7 +1,7 @@
 {
   "name": "@superblocksteam/schemas",
   "description": "Superblocks Schema Validators",
-  "version": "0.2223.0",
+  "version": "0.2319.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
